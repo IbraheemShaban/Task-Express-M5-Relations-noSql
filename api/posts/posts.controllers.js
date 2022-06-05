@@ -26,7 +26,7 @@ exports.postsDelete = async (req, res, next) => {
     next(error);
   }
 };
-
+//
 exports.postsUpdate = async (req, res, next) => {
   try {
     await Post.findByIdAndUpdate(req.post.id, req.body);

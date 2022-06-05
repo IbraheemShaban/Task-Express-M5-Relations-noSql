@@ -4,7 +4,7 @@ const postsRoutes = require('./api/posts/posts.routes');
 const authorsRoutes = require('./api/authors/authors.routes');
 const tagsRoutes = require('./api/tags/tags.routes');
 const connectDb = require('./database');
-
+//
 connectDb();
 app.use(express.json());
 app.use('/posts', postsRoutes);

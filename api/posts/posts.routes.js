@@ -7,7 +7,7 @@ const {
   // postsCreate,
   tagAdd,
 } = require('./posts.controllers');
-
+//
 router.param('postId', async (req, res, next, postId) => {
   const post = await fetchMonument(+postId, next);
   if (post) {
